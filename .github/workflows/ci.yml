@@ -7,22 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      - name: Setup ROS
-        uses: ros-tooling/setup-ros@v0.7
-        with:
-          required-ros-distributions: humble
+    - name: Setup ROS
+      uses: ros-tooling/setup-ros@v0.7
 
-      - name: Update rosdep
-        run: sudo rosdep update
+    - name: Install dependencies
+      run: sudo apt-get update && rosdep install --from-paths src --ignore-src -r -y
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y python3-colcon-common-extensions
+    - name: Install Python dependencies
+      run: python3 -m pip install -r requirements.txt
 
-      - name: Build the package
-        run: colcon build
+    - name: Build the package
+      run: colcon build --packages-select behavior_tree
 
-      - name: Run tests
-        run: colcon test
+    - name: Run custom tests
+      run: python3 src/behavior_tree/behavior_tree/test.py
