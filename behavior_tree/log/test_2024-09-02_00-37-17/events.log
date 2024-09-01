@@ -1,0 +1,564 @@
+[0.000000] (-) TimerEvent: {}
+[0.000375] (behavior_tree) JobQueued: {'identifier': 'behavior_tree', 'dependencies': OrderedDict([('behavior_tree', '/home/maira/ros2_ws/src/behavior_tree/install/behavior_tree')])}
+[0.000424] (behavior_tree) JobStarted: {'identifier': 'behavior_tree'}
+[0.098399] (-) TimerEvent: {}
+[0.198938] (-) TimerEvent: {}
+[0.240375] (behavior_tree) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/maira/ros2_ws/src/behavior_tree', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'maira', 'SSH_AGENT_PID': '83749', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/maira', 'OLDPWD': '/home/maira/ros2_ws/src/behavior_tree/behavior_tree', 'ROS_PYTHON_VERSION': '3', 'PS1': '(env) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/maira/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'maira', 'NAME': 'LAPTOP-I54L6LTH', 'WSL_INTEROP': '/run/WSL/63294_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/maira/Testing-and-Quality-Assurance/env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/mairz/AppData/Local/Microsoft/WindowsApps:/mnt/c/MinGW/bin:/mnt/c/Users/mairz/AppData/Roaming/npm:/mnt/c/OpenCV/x64/vc16/bin:/mnt/c/Users/mairz/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(env)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/tmp/ssh-XXXXXXOEGQi8/agent.83748', 'AMENT_PREFIX_PATH': '/home/maira/ros2_ws/install/behavior_tree:/home/maira/ros2_ws/install/my_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/maira/Testing-and-Quality-Assurance/env', 'PWD': '/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/maira/ros2_ws/install/behavior_tree/lib/python3.10/site-packages:/home/maira/ros2_ws/install/my_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': '', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/pytest.xml --junit-prefix=behavior_tree -o cache_dir=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/.pytest_cache'}, 'shell': False}
+[0.299099] (-) TimerEvent: {}
+[0.399425] (-) TimerEvent: {}
+[0.499722] (-) TimerEvent: {}
+[0.600186] (-) TimerEvent: {}
+[0.700765] (-) TimerEvent: {}
+[0.801148] (-) TimerEvent: {}
+[0.822577] (behavior_tree) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.822756] (behavior_tree) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.828257] (behavior_tree) StdoutLine: {'line': b'cachedir: build/behavior_tree/.pytest_cache\n'}
+[0.828388] (behavior_tree) StdoutLine: {'line': b'rootdir: /home/maira/ros2_ws/src/behavior_tree\n'}
+[0.828446] (behavior_tree) StdoutLine: {'line': b'plugins: ament-lint-0.12.10, ament-copyright-0.12.10, ament-flake8-0.12.10, launch-testing-1.0.5, ament-pep257-0.12.10, ament-xmllint-0.12.10, launch-testing-ros-0.19.7, anyio-4.4.0, repeat-0.9.1, rerunfailures-10.2, cov-3.0.0, colcon-core-0.16.0, timeout-2.1.0, mock-3.6.1\n'}
+[0.901270] (-) TimerEvent: {}
+[0.912513] (behavior_tree) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.912672] (behavior_tree) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.912833] (behavior_tree) StdoutLine: {'line': b'\n'}
+[0.917629] (behavior_tree) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 33%]\x1b[0m\n'}
+[1.001406] (-) TimerEvent: {}
+[1.101729] (-) TimerEvent: {}
+[1.182632] (behavior_tree) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[1.201887] (-) TimerEvent: {}
+[1.245282] (behavior_tree) StdoutLine: {'line': b'test/test_pep257.py \x1b[31mF\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[1.245614] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.245705] (behavior_tree) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[1.245778] (behavior_tree) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[1.245853] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[1.291469] (behavior_tree) StdoutLine: {'line': b'    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \\\n'}
+[1.291889] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found 82 code style errors / warnings:\x1b[0m\n'}
+[1.292027] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:1:1: E266 too many leading '#' for block comment\x1b[0m\n"}
+[1.292459] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:2:1: E266 too many leading '#' for block comment\x1b[0m\n"}
+[1.292622] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:7:1: F401 'rclpy.parameter.Parameter' imported but unused\x1b[0m\n"}
+[1.292950] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:7:1: I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'import smach'\x1b[0m\n"}
+[1.293039] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:8:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.parameter import Parameter'\x1b[0m\n"}
+[1.293293] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:9:1: F401 'std_msgs.msg.String' imported but unused\x1b[0m\n"}
+[1.293875] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:10:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'\x1b[0m\n"}
+[1.294285] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:11:1: I100 Import statements are in the wrong order. 'from sensor_msgs.msg import LaserScan' should be before 'from std_msgs.msg import Float32'\x1b[0m\n"}
+[1.294623] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:12:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'\x1b[0m\n"}
+[1.294712] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:13:1: F401 'yaml' imported but unused\x1b[0m\n"}
+[1.294779] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:14:1: F401 'time' imported but unused\x1b[0m\n"}
+[1.294854] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:14:1: I100 Import statements are in the wrong order. 'import time' should be before 'import yaml' and in a different group.\x1b[0m\n"}
+[1.294910] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:14:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import yaml' is identified as Third Party.\x1b[0m\n"}
+[1.294956] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:18:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.295018] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:19:1: D200 One-line docstring should fit on one line with quotes\x1b[0m\n'}
+[1.295136] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:19:1: D204 1 blank line required after class docstring\x1b[0m\n'}
+[1.295225] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:19:1: D400 First line should end with a period\x1b[0m\n'}
+[1.295283] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:24:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.295399] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:25:82: W291 trailing whitespace\x1b[0m\n'}
+[1.295482] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:26:82: W291 trailing whitespace\x1b[0m\n'}
+[1.295563] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:28:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.295615] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:34:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.295675] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:35:100: E501 line too long (107 > 99 characters)\x1b[0m\n'}
+[1.295741] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:37:100: E501 line too long (112 > 99 characters)\x1b[0m\n'}
+[1.295784] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:39:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.295834] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:44:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.295874] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:46:100: E501 line too long (104 > 99 characters)\x1b[0m\n'}
+[1.295918] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:53:5: E301 expected 1 blank line, found 0\x1b[0m\n'}
+[1.295956] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:75:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296033] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:78:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296130] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:81:100: E501 line too long (102 > 99 characters)\x1b[0m\n'}
+[1.296202] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:82:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296285] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:89:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296347] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:93:1: E303 too many blank lines (4)\x1b[0m\n'}
+[1.296425] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:94:1: D200 One-line docstring should fit on one line with quotes\x1b[0m\n'}
+[1.296500] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:94:1: D204 1 blank line required after class docstring\x1b[0m\n'}
+[1.296566] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:94:1: D400 First line should end with a period\x1b[0m\n'}
+[1.296648] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:99:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296715] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:101:60: W291 trailing whitespace\x1b[0m\n'}
+[1.296782] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:107:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296834] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:111:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.296920] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:115:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297005] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:123:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297065] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:127:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297148] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:132:1: D200 One-line docstring should fit on one line with quotes\x1b[0m\n'}
+[1.297221] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:132:1: D204 1 blank line required after class docstring\x1b[0m\n'}
+[1.297287] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:132:1: D400 First line should end with a period\x1b[0m\n'}
+[1.297342] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:138:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297384] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:139:77: W291 trailing whitespace\x1b[0m\n'}
+[1.297485] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:140:60: W291 trailing whitespace\x1b[0m\n'}
+[1.297568] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:145:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297625] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:151:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.297696] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:156:100: E501 line too long (101 > 99 characters)\x1b[0m\n'}
+[1.297763] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:157:10: W291 trailing whitespace\x1b[0m\n'}
+[1.297843] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:158:100: E501 line too long (109 > 99 characters)\x1b[0m\n'}
+[1.298023] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:170:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.298093] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:175:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.298155] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:180:1: E266 too many leading '#' for block comment\x1b[0m\n"}
+[1.298215] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:183:1: D200 One-line docstring should fit on one line with quotes\x1b[0m\n'}
+[1.298266] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:183:1: D202 No blank lines allowed after function docstring\x1b[0m\n'}
+[1.298334] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:183:1: D400 First line should end with a period\x1b[0m\n'}
+[1.298399] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:183:1: D401 First line should be in imperative mood; try rephrasing\x1b[0m\n'}
+[1.298444] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:188:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.298483] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:198:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.298759] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:200:26: E128 continuation line under-indented for visual indent\x1b[0m\n'}
+[1.298846] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:203:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.298893] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:205:26: E128 continuation line under-indented for visual indent\x1b[0m\n'}
+[1.298987] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:206:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.299053] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:208:26: E128 continuation line under-indented for visual indent\x1b[0m\n'}
+[1.299101] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:211:5: F841 local variable 'outcome' is assigned to but never used\x1b[0m\n"}
+[1.299154] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:215:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.299220] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:218:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.299287] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:218:16: Q000 Double quotes found but single quotes preferred\x1b[0m\n'}
+[1.299353] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/state_machine1.py:219:11: W292 no newline at end of file\x1b[0m\n'}
+[1.299399] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/test.py:3:1: F401 'state_machine1.RotateBase' imported but unused\x1b[0m\n"}
+[1.299439] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/test.py:3:1: F401 'state_machine1.StopMotion' imported but unused\x1b[0m\n"}
+[1.299503] (behavior_tree) StdoutLine: {'line': b"\x1b[1m\x1b[31mE     ./behavior_tree/test.py:3:1: I201 Missing newline between import groups. 'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion' is identified as Third Party and 'from unittest.mock import MagicMock' is identified as Stdlib.\x1b[0m\n"}
+[1.299593] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/test.py:5:1: E302 expected 2 blank lines, found 1\x1b[0m\n'}
+[1.299666] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/test.py:6:1: CNL100 Class definition does not have a new line.\x1b[0m\n'}
+[1.299736] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/test.py:19:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.299801] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/test.py:23:1: W293 blank line contains whitespace\x1b[0m\n'}
+[1.299873] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE     ./behavior_tree/test.py:49:1: E305 expected 2 blank lines after class or function definition, found 1\x1b[0m\n'}
+[1.299942] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.300016] (behavior_tree) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.300081] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.300126] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:1:1: E266 too many leading '#' for block comment\n"}
+[1.300185] (behavior_tree) StdoutLine: {'line': b'### Implement the safety functionalities for the Robile by setting up\n'}
+[1.300251] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.300306] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.300377] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:2:1: E266 too many leading '#' for block comment\n"}
+[1.300424] (behavior_tree) StdoutLine: {'line': b'### a state machine and implementing all required states here\n'}
+[1.300464] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.300502] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.300539] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:7:1: F401 'rclpy.parameter.Parameter' imported but unused\n"}
+[1.300614] (behavior_tree) StdoutLine: {'line': b'from rclpy.parameter import Parameter\n'}
+[1.300681] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.300732] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.300813] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:7:1: I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'import smach'\n"}
+[1.300901] (behavior_tree) StdoutLine: {'line': b'from rclpy.parameter import Parameter\n'}
+[1.300977] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.301065] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.301122] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:8:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.parameter import Parameter'\n"}
+[1.301191] (behavior_tree) StdoutLine: {'line': b'from rclpy.node import Node\n'}
+[1.301236] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.301289] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.301354] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:9:1: F401 'std_msgs.msg.String' imported but unused\n"}
+[1.301419] (behavior_tree) StdoutLine: {'line': b'from std_msgs.msg import String\n'}
+[1.301469] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.301534] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.301617] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:10:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'\n"}
+[1.301675] (behavior_tree) StdoutLine: {'line': b'from std_msgs.msg import Float32\n'}
+[1.301739] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.301788] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.301831] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:11:1: I100 Import statements are in the wrong order. 'from sensor_msgs.msg import LaserScan' should be before 'from std_msgs.msg import Float32'\n"}
+[1.301882] (-) TimerEvent: {}
+[1.302089] (behavior_tree) StdoutLine: {'line': b'from sensor_msgs.msg import LaserScan\n'}
+[1.302152] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.302197] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.302237] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:12:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'\n"}
+[1.302278] (behavior_tree) StdoutLine: {'line': b'from geometry_msgs.msg import Twist\n'}
+[1.302316] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.302353] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.302416] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:13:1: F401 'yaml' imported but unused\n"}
+[1.302489] (behavior_tree) StdoutLine: {'line': b'import yaml\n'}
+[1.302539] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.302602] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.302659] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:14:1: F401 'time' imported but unused\n"}
+[1.302727] (behavior_tree) StdoutLine: {'line': b'import time\n'}
+[1.302801] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.302867] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.302935] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:14:1: I100 Import statements are in the wrong order. 'import time' should be before 'import yaml' and in a different group.\n"}
+[1.303020] (behavior_tree) StdoutLine: {'line': b'import time\n'}
+[1.303086] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.303130] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.303193] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:14:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import yaml' is identified as Third Party.\n"}
+[1.303259] (behavior_tree) StdoutLine: {'line': b'import time\n'}
+[1.303318] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.303367] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.303408] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:18:1: E302 expected 2 blank lines, found 1\n'}
+[1.303448] (behavior_tree) StdoutLine: {'line': b'class MonitorBatteryAndCollision(smach.State):\n'}
+[1.303489] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.303553] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.303598] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19:1: D200 One-line docstring should fit on one line with quotes\n'}
+[1.303660] (behavior_tree) StdoutLine: {'line': b'    """State to monitor the battery level and possible collisions\n'}
+[1.303726] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.303790] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.303853] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.303896] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19:1: D204 1 blank line required after class docstring\n'}
+[1.303972] (behavior_tree) StdoutLine: {'line': b'    """State to monitor the battery level and possible collisions\n'}
+[1.304022] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.304093] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.304146] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.304223] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19:1: D400 First line should end with a period\n'}
+[1.304286] (behavior_tree) StdoutLine: {'line': b'    """State to monitor the battery level and possible collisions\n'}
+[1.304337] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.304400] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.304444] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.304501] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:24:1: W293 blank line contains whitespace\n'}
+[1.304586] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.304716] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.304820] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.304906] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:25:82: W291 trailing whitespace\n'}
+[1.304986] (behavior_tree) StdoutLine: {'line': b"        smach.State.__init__(self, outcomes=['low_battery', 'collision', 'safe'], \n"}
+[1.305162] (behavior_tree) StdoutLine: {'line': b'                                                                                 ^\n'}
+[1.305266] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.305408] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:26:82: W291 trailing whitespace\n'}
+[1.305548] (behavior_tree) StdoutLine: {'line': b"                             output_keys=['battery_level', 'collision_detected'], \n"}
+[1.305763] (behavior_tree) StdoutLine: {'line': b'                                                                                 ^\n'}
+[1.305922] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.306022] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:28:1: W293 blank line contains whitespace\n'}
+[1.306103] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.306150] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.306201] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.306274] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:34:1: W293 blank line contains whitespace\n'}
+[1.306381] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.306468] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.306514] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.306554] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:35:100: E501 line too long (107 > 99 characters)\n'}
+[1.306593] (behavior_tree) StdoutLine: {'line': b"        self.collision_sub = self.node.create_subscription(LaserScan, '/scan', self.collision_callback, 10)\n"}
+[1.306685] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.306746] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.306903] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:37:100: E501 line too long (112 > 99 characters)\n'}
+[1.306974] (behavior_tree) StdoutLine: {'line': b"#         self.battery_sub = self.node.create_subscription(Float32, '/battery_level', self.battery_callback, 10)\n"}
+[1.307021] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.307063] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.307161] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:39:1: W293 blank line contains whitespace\n'}
+[1.307208] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.307249] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.307311] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.307356] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:44:1: W293 blank line contains whitespace\n'}
+[1.307396] (behavior_tree) StdoutLine: {'line': b'    \n'}
+[1.307456] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.307574] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.307666] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:46:100: E501 line too long (104 > 99 characters)\n'}
+[1.307730] (behavior_tree) StdoutLine: {'line': b'        # Check if any laser scan reading is below a certain threshold, indicating a potential collision\n'}
+[1.307802] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.307883] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.308033] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:53:5: E301 expected 1 blank line, found 0\n'}
+[1.308117] (behavior_tree) StdoutLine: {'line': b'    def execute(self, userdata):\n'}
+[1.308163] (behavior_tree) StdoutLine: {'line': b'    ^\n'}
+[1.308203] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.308273] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:75:1: W293 blank line contains whitespace\n'}
+[1.308317] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.308406] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.308456] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.308497] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:78:1: W293 blank line contains whitespace\n'}
+[1.308572] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.308649] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.308725] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.308789] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:81:100: E501 line too long (102 > 99 characters)\n'}
+[1.308866] (behavior_tree) StdoutLine: {'line': b"            self.node.set_parameters([rclpy.parameter.Parameter(name='collision_reset', value=False)])\n"}
+[1.308946] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.309025] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.309092] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:82:1: W293 blank line contains whitespace\n'}
+[1.309140] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.309181] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.309220] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.309266] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:89:1: W293 blank line contains whitespace\n'}
+[1.309306] (behavior_tree) StdoutLine: {'line': b'    \n'}
+[1.309369] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.309466] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.309609] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:93:1: E303 too many blank lines (4)\n'}
+[1.309677] (behavior_tree) StdoutLine: {'line': b'class RotateBase(smach.State):\n'}
+[1.309741] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.309817] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.309886] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94:1: D200 One-line docstring should fit on one line with quotes\n'}
+[1.309989] (behavior_tree) StdoutLine: {'line': b'    """State to rotate the Robile base\n'}
+[1.310036] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.310126] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.310193] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.310261] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94:1: D204 1 blank line required after class docstring\n'}
+[1.310307] (behavior_tree) StdoutLine: {'line': b'    """State to rotate the Robile base\n'}
+[1.310408] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.310485] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.310551] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.310641] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94:1: D400 First line should end with a period\n'}
+[1.310708] (behavior_tree) StdoutLine: {'line': b'    """State to rotate the Robile base\n'}
+[1.310752] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.310792] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.310831] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.310869] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:99:1: W293 blank line contains whitespace\n'}
+[1.310908] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.310945] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.310982] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.311019] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:101:60: W291 trailing whitespace\n'}
+[1.311070] (behavior_tree) StdoutLine: {'line': b"        smach.State.__init__(self, outcomes=['battery_ok'], \n"}
+[1.311110] (behavior_tree) StdoutLine: {'line': b'                                                           ^\n'}
+[1.311148] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.311186] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:107:1: W293 blank line contains whitespace\n'}
+[1.311228] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.311265] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.311302] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.311437] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:111:1: W293 blank line contains whitespace\n'}
+[1.311563] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.311635] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.311711] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.311792] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:115:1: W293 blank line contains whitespace\n'}
+[1.311865] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.311943] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.312023] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.312089] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:123:1: W293 blank line contains whitespace\n'}
+[1.312142] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.312225] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.312273] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.312315] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:127:1: W293 blank line contains whitespace\n'}
+[1.312379] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.312425] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.312466] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.312506] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132:1: D200 One-line docstring should fit on one line with quotes\n'}
+[1.312546] (behavior_tree) StdoutLine: {'line': b'    """State to stop the robot\'s motion\n'}
+[1.312586] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.312626] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.312776] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.312844] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132:1: D204 1 blank line required after class docstring\n'}
+[1.312892] (behavior_tree) StdoutLine: {'line': b'    """State to stop the robot\'s motion\n'}
+[1.312941] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.313000] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.313067] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.313141] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132:1: D400 First line should end with a period\n'}
+[1.313263] (behavior_tree) StdoutLine: {'line': b'    """State to stop the robot\'s motion\n'}
+[1.313404] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.313512] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.313594] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.313771] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:138:1: W293 blank line contains whitespace\n'}
+[1.313827] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.313872] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.313913] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.313965] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:139:77: W291 trailing whitespace\n'}
+[1.314145] (behavior_tree) StdoutLine: {'line': b"        smach.State.__init__(self, outcomes=['manual_reset', 'low_battery'], \n"}
+[1.314225] (behavior_tree) StdoutLine: {'line': b'                                                                            ^\n'}
+[1.314306] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.314385] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:140:60: W291 trailing whitespace\n'}
+[1.314477] (behavior_tree) StdoutLine: {'line': b"                             output_keys=['battery_level'], \n"}
+[1.314552] (behavior_tree) StdoutLine: {'line': b'                                                           ^\n'}
+[1.314652] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.314700] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:145:1: W293 blank line contains whitespace\n'}
+[1.314743] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.314785] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.314851] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.314952] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:151:1: W293 blank line contains whitespace\n'}
+[1.315095] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.315196] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.315296] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.315347] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:156:100: E501 line too long (101 > 99 characters)\n'}
+[1.315433] (behavior_tree) StdoutLine: {'line': b'        # Move the robot and run this command ( ros2 param set /AST_Assignment collision_reset True )\n'}
+[1.315516] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.315628] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.315837] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:157:10: W291 trailing whitespace\n'}
+[1.315941] (behavior_tree) StdoutLine: {'line': b'        # \n'}
+[1.316026] (behavior_tree) StdoutLine: {'line': b'         ^\n'}
+[1.316113] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.316189] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:158:100: E501 line too long (109 > 99 characters)\n'}
+[1.316272] (behavior_tree) StdoutLine: {'line': b"        while rclpy.ok() and not self.node.get_parameter('collision_reset').get_parameter_value().bool_value:\n"}
+[1.316371] (behavior_tree) StdoutLine: {'line': b'                                                                                                   ^\n'}
+[1.316441] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.316528] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:170:1: W293 blank line contains whitespace\n'}
+[1.316615] (behavior_tree) StdoutLine: {'line': b'            \n'}
+[1.316762] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.316904] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.317070] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:175:1: W293 blank line contains whitespace\n'}
+[1.317248] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.317350] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.317502] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.317559] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:180:1: E266 too many leading '#' for block comment\n"}
+[1.317647] (behavior_tree) StdoutLine: {'line': b'### YOUR CODE HERE ###\n'}
+[1.317706] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.317868] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.317954] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183:1: D200 One-line docstring should fit on one line with quotes\n'}
+[1.318048] (behavior_tree) StdoutLine: {'line': b'    """Main function to initialise and execute the state machine\n'}
+[1.318115] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.318261] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.318368] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.318520] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183:1: D202 No blank lines allowed after function docstring\n'}
+[1.318596] (behavior_tree) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[1.318690] (behavior_tree) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.318779] (behavior_tree) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[1.318923] (behavior_tree) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[1.318979] (behavior_tree) StderrLine: {'line': b'\n'}
+[1.319109] (behavior_tree) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[1.319192] (behavior_tree) StdoutLine: {'line': b'    """Main function to initialise and execute the state machine\n'}
+[1.319343] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.319419] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.319523] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.319608] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183:1: D400 First line should end with a period\n'}
+[1.319685] (behavior_tree) StdoutLine: {'line': b'    """Main function to initialise and execute the state machine\n'}
+[1.319733] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.319867] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.319953] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.320071] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183:1: D401 First line should be in imperative mood; try rephrasing\n'}
+[1.320167] (behavior_tree) StdoutLine: {'line': b'    """Main function to initialise and execute the state machine\n'}
+[1.320245] (behavior_tree) StdoutLine: {'line': b'    """\n'}
+[1.320293] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.320336] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.320381] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:188:1: W293 blank line contains whitespace\n'}
+[1.320474] (behavior_tree) StdoutLine: {'line': b'    \n'}
+[1.320554] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.320610] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.320654] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:198:1: W293 blank line contains whitespace\n'}
+[1.320696] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.320853] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.320992] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.321117] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:200:26: E128 continuation line under-indented for visual indent\n'}
+[1.321208] (behavior_tree) StdoutLine: {'line': b"                         transitions={'low_battery': 'ROTATE_BASE',\n"}
+[1.321284] (behavior_tree) StdoutLine: {'line': b'                         ^\n'}
+[1.321427] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.321548] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:203:1: W293 blank line contains whitespace\n'}
+[1.321696] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.321814] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.321995] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.322108] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:205:26: E128 continuation line under-indented for visual indent\n'}
+[1.322276] (behavior_tree) StdoutLine: {'line': b"                         transitions={'battery_ok': 'MONITOR_BATTERY_AND_COLLISION'})\n"}
+[1.322429] (behavior_tree) StdoutLine: {'line': b'                         ^\n'}
+[1.322593] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.322726] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:206:1: W293 blank line contains whitespace\n'}
+[1.322834] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.322892] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.322943] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.322989] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:208:26: E128 continuation line under-indented for visual indent\n'}
+[1.323032] (behavior_tree) StdoutLine: {'line': b"                         transitions={'manual_reset': 'MONITOR_BATTERY_AND_COLLISION',\n"}
+[1.323074] (behavior_tree) StdoutLine: {'line': b'                         ^\n'}
+[1.323116] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.323157] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:211:5: F841 local variable 'outcome' is assigned to but never used\n"}
+[1.323199] (behavior_tree) StdoutLine: {'line': b'    outcome = sm.execute()\n'}
+[1.323240] (behavior_tree) StdoutLine: {'line': b'    ^\n'}
+[1.323299] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.323386] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:215:1: W293 blank line contains whitespace\n'}
+[1.323533] (behavior_tree) StdoutLine: {'line': b'    \n'}
+[1.323681] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.323910] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.324046] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:218:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.324106] (behavior_tree) StdoutLine: {'line': b'if __name__ == "__main__":\n'}
+[1.324153] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.324198] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.324244] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:218:16: Q000 Double quotes found but single quotes preferred\n'}
+[1.324299] (behavior_tree) StdoutLine: {'line': b'if __name__ == "__main__":\n'}
+[1.324396] (behavior_tree) StdoutLine: {'line': b'               ^\n'}
+[1.324449] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.324529] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:219:11: W292 no newline at end of file\n'}
+[1.324733] (behavior_tree) StdoutLine: {'line': b'    main()          ^\n'}
+[1.324809] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.324857] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/test.py:3:1: F401 'state_machine1.RotateBase' imported but unused\n"}
+[1.324902] (behavior_tree) StdoutLine: {'line': b'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion\n'}
+[1.324946] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.324989] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.325031] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/test.py:3:1: F401 'state_machine1.StopMotion' imported but unused\n"}
+[1.325121] (behavior_tree) StdoutLine: {'line': b'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion\n'}
+[1.325219] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.325279] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.325376] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/test.py:3:1: I201 Missing newline between import groups. 'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion' is identified as Third Party and 'from unittest.mock import MagicMock' is identified as Stdlib.\n"}
+[1.325433] (behavior_tree) StdoutLine: {'line': b'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion\n'}
+[1.325478] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.325520] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.325561] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/test.py:5:1: E302 expected 2 blank lines, found 1\n'}
+[1.325688] (behavior_tree) StdoutLine: {'line': b'class TestMonitorBatteryAndCollision(unittest.TestCase):\n'}
+[1.325767] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.325940] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.326084] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/test.py:6:1: CNL100 Class definition does not have a new line.\n'}
+[1.326169] (behavior_tree) StdoutLine: {'line': b'    def setUp(self):\n'}
+[1.326325] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.326461] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.326541] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/test.py:19:1: W293 blank line contains whitespace\n'}
+[1.326630] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.326714] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.326841] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.326930] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/test.py:23:1: W293 blank line contains whitespace\n'}
+[1.326981] (behavior_tree) StdoutLine: {'line': b'        \n'}
+[1.327027] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.327070] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.327112] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/test.py:49:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.327180] (behavior_tree) StdoutLine: {'line': b"if __name__ == '__main__':\n"}
+[1.327256] (behavior_tree) StdoutLine: {'line': b'^\n'}
+[1.327344] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.327495] (behavior_tree) StdoutLine: {'line': b'1     CNL100 Class definition does not have a new line.\n'}
+[1.327657] (behavior_tree) StdoutLine: {'line': b'4     D200 One-line docstring should fit on one line with quotes\n'}
+[1.327772] (behavior_tree) StdoutLine: {'line': b'1     D202 No blank lines allowed after function docstring\n'}
+[1.327893] (behavior_tree) StdoutLine: {'line': b'3     D204 1 blank line required after class docstring\n'}
+[1.327989] (behavior_tree) StdoutLine: {'line': b'4     D400 First line should end with a period\n'}
+[1.328089] (behavior_tree) StdoutLine: {'line': b'1     D401 First line should be in imperative mood; try rephrasing\n'}
+[1.328160] (behavior_tree) StdoutLine: {'line': b'3     E128 continuation line under-indented for visual indent\n'}
+[1.328229] (behavior_tree) StdoutLine: {'line': b"3     E266 too many leading '#' for block comment\n"}
+[1.328371] (behavior_tree) StdoutLine: {'line': b'1     E301 expected 1 blank line, found 0\n'}
+[1.328471] (behavior_tree) StdoutLine: {'line': b'2     E302 expected 2 blank lines, found 1\n'}
+[1.328544] (behavior_tree) StdoutLine: {'line': b'1     E303 too many blank lines (4)\n'}
+[1.328668] (behavior_tree) StdoutLine: {'line': b'2     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[1.328748] (behavior_tree) StdoutLine: {'line': b'6     E501 line too long (107 > 99 characters)\n'}
+[1.328843] (behavior_tree) StdoutLine: {'line': b"6     F401 'rclpy.parameter.Parameter' imported but unused\n"}
+[1.328897] (behavior_tree) StdoutLine: {'line': b"1     F841 local variable 'outcome' is assigned to but never used\n"}
+[1.328943] (behavior_tree) StdoutLine: {'line': b"6     I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'import smach'\n"}
+[1.329085] (behavior_tree) StdoutLine: {'line': b"2     I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import yaml' is identified as Third Party.\n"}
+[1.329214] (behavior_tree) StdoutLine: {'line': b'1     Q000 Double quotes found but single quotes preferred\n'}
+[1.329326] (behavior_tree) StdoutLine: {'line': b'6     W291 trailing whitespace\n'}
+[1.329434] (behavior_tree) StdoutLine: {'line': b'1     W292 no newline at end of file\n'}
+[1.329524] (behavior_tree) StdoutLine: {'line': b'27    W293 blank line contains whitespace\n'}
+[1.329617] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.329748] (behavior_tree) StdoutLine: {'line': b'7 files checked\n'}
+[1.329933] (behavior_tree) StdoutLine: {'line': b'82 errors\n'}
+[1.329987] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.330033] (behavior_tree) StdoutLine: {'line': b"'C'-type errors: 1\n"}
+[1.330077] (behavior_tree) StdoutLine: {'line': b"'D'-type errors: 13\n"}
+[1.330172] (behavior_tree) StdoutLine: {'line': b"'E'-type errors: 18\n"}
+[1.330265] (behavior_tree) StdoutLine: {'line': b"'F'-type errors: 7\n"}
+[1.330447] (behavior_tree) StdoutLine: {'line': b"'I'-type errors: 8\n"}
+[1.330518] (behavior_tree) StdoutLine: {'line': b"'Q'-type errors: 1\n"}
+[1.330628] (behavior_tree) StdoutLine: {'line': b"'W'-type errors: 34\n"}
+[1.330744] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.330915] (behavior_tree) StdoutLine: {'line': b'Checked files:\n'}
+[1.330991] (behavior_tree) StdoutLine: {'line': b'\n'}
+[1.331102] (behavior_tree) StdoutLine: {'line': b'* ./setup.py\n'}
+[1.331269] (behavior_tree) StdoutLine: {'line': b'* ./behavior_tree/state_machine1.py\n'}
+[1.331373] (behavior_tree) StdoutLine: {'line': b'* ./behavior_tree/test.py\n'}
+[1.331436] (behavior_tree) StdoutLine: {'line': b'* ./behavior_tree/__init__.py\n'}
+[1.331563] (behavior_tree) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[1.331635] (behavior_tree) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[1.331683] (behavior_tree) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[1.331730] (behavior_tree) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[1.331823] (behavior_tree) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.331881] (behavior_tree) StdoutLine: {'line': b'option --application-import-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.331928] (behavior_tree) StdoutLine: {'line': b'option --application-package-names: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.331979] (behavior_tree) StdoutLine: {'line': b'option --import-order-style: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.332022] (behavior_tree) StdoutLine: {'line': b'option --quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.332065] (behavior_tree) StdoutLine: {'line': b'option --inline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.332106] (behavior_tree) StdoutLine: {'line': b'option --multiline-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.332147] (behavior_tree) StdoutLine: {'line': b'option --docstring-quotes: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[1.332187] (behavior_tree) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_pep257 __________________________________\x1b[0m\n'}
+[1.332227] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_pep257.py\x1b[0m:23: in test_pep257\n'}
+[1.332267] (behavior_tree) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound code style errors / warnings\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[1.332362] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found code style errors / warnings\x1b[0m\n'}
+[1.332460] (behavior_tree) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[1.332516] (behavior_tree) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[1.332624] (behavior_tree) StdoutLine: {'line': b'checking ./behavior_tree/__init__.py\n'}
+[1.332707] (behavior_tree) StdoutLine: {'line': b'checking ./behavior_tree/state_machine1.py\n'}
+[1.332829] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19 in public class `MonitorBatteryAndCollision`: D200: One-line docstring should fit on one line with quotes (found 2)\n'}
+[1.332899] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19 in public class `MonitorBatteryAndCollision`: D204: 1 blank line required after class docstring (found 0)\n'}
+[1.332946] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:19 in public class `MonitorBatteryAndCollision`: D213: Multi-line docstring summary should start at the second line\n'}
+[1.332989] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:19 in public class `MonitorBatteryAndCollision`: D400: First line should end with a period (not 's')\n"}
+[1.333071] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:19 in public class `MonitorBatteryAndCollision`: D415: First line should end with a period, question mark, or exclamation point (not 's')\n"}
+[1.333137] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94 in public class `RotateBase`: D200: One-line docstring should fit on one line with quotes (found 2)\n'}
+[1.333255] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94 in public class `RotateBase`: D204: 1 blank line required after class docstring (found 0)\n'}
+[1.333359] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:94 in public class `RotateBase`: D213: Multi-line docstring summary should start at the second line\n'}
+[1.333507] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:94 in public class `RotateBase`: D400: First line should end with a period (not 'e')\n"}
+[1.333646] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:94 in public class `RotateBase`: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[1.333708] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132 in public class `StopMotion`: D200: One-line docstring should fit on one line with quotes (found 2)\n'}
+[1.333758] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132 in public class `StopMotion`: D204: 1 blank line required after class docstring (found 0)\n'}
+[1.333814] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:132 in public class `StopMotion`: D213: Multi-line docstring summary should start at the second line\n'}
+[1.333868] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:132 in public class `StopMotion`: D400: First line should end with a period (not 'n')\n"}
+[1.333954] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:132 in public class `StopMotion`: D415: First line should end with a period, question mark, or exclamation point (not 'n')\n"}
+[1.334046] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183 in public function `main`: D200: One-line docstring should fit on one line with quotes (found 2)\n'}
+[1.334152] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183 in public function `main`: D202: No blank lines allowed after function docstring (found 1)\n'}
+[1.334258] (behavior_tree) StdoutLine: {'line': b'./behavior_tree/state_machine1.py:183 in public function `main`: D213: Multi-line docstring summary should start at the second line\n'}
+[1.334355] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:183 in public function `main`: D400: First line should end with a period (not 'e')\n"}
+[1.334424] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:183 in public function `main`: D415: First line should end with a period, question mark, or exclamation point (not 'e')\n"}
+[1.334478] (behavior_tree) StdoutLine: {'line': b"./behavior_tree/state_machine1.py:183 in public function `main`: D401: First line should be in imperative mood; try rephrasing (found 'Main')\n"}
+[1.334588] (behavior_tree) StdoutLine: {'line': b'checking ./behavior_tree/test.py\n'}
+[1.334658] (behavior_tree) StdoutLine: {'line': b'checking ./setup.py\n'}
+[1.334717] (behavior_tree) StdoutLine: {'line': b'checking ./test/test_copyright.py\n'}
+[1.334787] (behavior_tree) StdoutLine: {'line': b'checking ./test/test_flake8.py\n'}
+[1.334863] (behavior_tree) StdoutLine: {'line': b'checking ./test/test_pep257.py\n'}
+[1.334928] (behavior_tree) StdoutLine: {'line': b'checking test/test_copyright.py\n'}
+[1.335021] (behavior_tree) StdoutLine: {'line': b'checking test/test_flake8.py\n'}
+[1.335189] (behavior_tree) StdoutLine: {'line': b'checking test/test_pep257.py\n'}
+[1.335314] (behavior_tree) StdoutLine: {'line': b'21 errors\n'}
+[1.335382] (behavior_tree) StdoutLine: {'line': b'- generated xml file: /home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/pytest.xml -\n'}
+[1.335476] (behavior_tree) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[1.335532] (behavior_tree) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 82 code style...\n'}
+[1.335581] (behavior_tree) StdoutLine: {'line': b'FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...\n'}
+[1.335624] (behavior_tree) StdoutLine: {'line': b'\x1b[31m=================== \x1b[31m\x1b[1m2 failed\x1b[0m, \x1b[33m1 skipped\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.47s\x1b[0m\x1b[31m ===================\x1b[0m\n'}
+[1.402059] (-) TimerEvent: {}
+[1.483754] (behavior_tree) CommandEnded: {'returncode': 1}
+[1.484643] (behavior_tree) TestFailure: {'identifier': 'behavior_tree'}
+[1.484695] (behavior_tree) JobEnded: {'identifier': 'behavior_tree', 'rc': 0}
+[1.486054] (-) EventReactorShutdown: {}

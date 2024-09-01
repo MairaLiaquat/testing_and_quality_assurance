@@ -1,0 +1,59 @@
+[0.447s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test', '--packages-select', 'behavior_tree', '--event-handlers', 'console_cohesion+']
+[0.448s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=16, event_handlers=['console_cohesion+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['behavior_tree'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], ctest_args=None, python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fe688b73340>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x7fe688d63e80>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x7fe688d63e80>>)
+[0.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.817s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maira/ros2_ws/src/behavior_tree'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.835s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'behavior_tree'
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'ctest_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'python_testing' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'pytest_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'pytest_with_coverage' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'unittest_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'retest_until_pass' from command line to '0'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'behavior_tree' test argument 'retest_until_fail' from command line to '0'
+[0.839s] DEBUG:colcon.colcon_core.verb.test:Testing package 'behavior_tree' with the following arguments: {'build_base': '/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree', 'ctest_args': None, 'install_base': '/home/maira/ros2_ws/src/behavior_tree/install/behavior_tree', 'path': '/home/maira/ros2_ws/src/behavior_tree', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[0.839s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.842s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/maira/ros2_ws/src/behavior_tree' with build type'ament_python'
+[0.842s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/maira/ros2_ws/src/behavior_tree'
+[0.848s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.848s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.848s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.855s] WARNING:colcon.colcon_core.shell:The following packages are in the workspace but haven't been built:
+- behavior_tree
+They are being used from the following locations instead:
+- /home/maira/ros2_ws/install/behavior_tree
+To suppress this warning ignore these packages in the workspace:
+--packages-ignore behavior_tree
+[1.082s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.082s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maira/ros2_ws/src/behavior_tree': PS1=(env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTEST_ADDOPTS=--tb=short --junit-xml=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/pytest.xml --junit-prefix=behavior_tree -o cache_dir=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(env) /usr/bin/python3 -m pytest
+[2.326s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maira/ros2_ws/src/behavior_tree' returned '1': PS1=(env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTEST_ADDOPTS=--tb=short --junit-xml=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/pytest.xml --junit-prefix=behavior_tree -o cache_dir=/home/maira/ros2_ws/src/behavior_tree/build/behavior_tree/.pytest_cache PYTHONDONTWRITEBYTECODE=1 VIRTUAL_ENV_PROMPT=(env) /usr/bin/python3 -m pytest
+[2.327s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.328s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.328s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.363s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.363s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.363s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.363s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.364s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[2.364s] DEBUG:colcon.colcon_core.event_reactor:joined thread

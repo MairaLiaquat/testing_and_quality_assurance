@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="1" tests="3" time="0.423" timestamp="2024-09-02T00:37:19.076929" hostname="LAPTOP-I54L6LTH"><testcase classname="behavior_tree.test.test_copyright" name="test_copyright" time="0.000"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/home/maira/ros2_ws/src/behavior_tree/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="behavior_tree.test.test_flake8" name="test_flake8" time="0.236"><failure message="AssertionError: Found 82 code style errors / warnings:&#10;  ./behavior_tree/state_machine1.py:1:1: E266 too many leading '#' for block comment&#10;  ./behavior_tree/state_machine1.py:2:1: E266 too many leading '#' for block comment&#10;  ./behavior_tree/state_machine1.py:7:1: F401 'rclpy.parameter.Parameter' imported but unused&#10;  ./behavior_tree/state_machine1.py:7:1: I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'import smach'&#10;  ./behavior_tree/state_machine1.py:8:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.parameter import Parameter'&#10;  ./behavior_tree/state_machine1.py:9:1: F401 'std_msgs.msg.String' imported but unused&#10;  ./behavior_tree/state_machine1.py:10:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'&#10;  ./behavior_tree/state_machine1.py:11:1: I100 Import statements are in the wrong order. 'from sensor_msgs.msg import LaserScan' should be before 'from std_msgs.msg import Float32'&#10;  ./behavior_tree/state_machine1.py:12:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'&#10;  ./behavior_tree/state_machine1.py:13:1: F401 'yaml' imported but unused&#10;  ./behavior_tree/state_machine1.py:14:1: F401 'time' imported but unused&#10;  ./behavior_tree/state_machine1.py:14:1: I100 Import statements are in the wrong order. 'import time' should be before 'import yaml' and in a different group.&#10;  ./behavior_tree/state_machine1.py:14:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import yaml' is identified as Third Party.&#10;  ./behavior_tree/state_machine1.py:18:1: E302 expected 2 blank lines, found 1&#10;  ./behavior_tree/state_machine1.py:19:1: D200 One-line docstring should fit on one line with quotes&#10;  ./behavior_tree/state_machine1.py:19:1: D204 1 blank line required after class docstring&#10;  ./behavior_tree/state_machine1.py:19:1: D400 First line should end with a period&#10;  ./behavior_tree/state_machine1.py:24:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:25:82: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:26:82: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:28:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:34:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:35:100: E501 line too long (107 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:37:100: E501 line too long (112 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:39:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:44:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:46:100: E501 line too long (104 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:53:5: E301 expected 1 blank line, found 0&#10;  ./behavior_tree/state_machine1.py:75:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:78:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:81:100: E501 line too long (102 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:82:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:89:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:93:1: E303 too many blank lines (4)&#10;  ./behavior_tree/state_machine1.py:94:1: D200 One-line docstring should fit on one line with quotes&#10;  ./behavior_tree/state_machine1.py:94:1: D204 1 blank line required after class docstring&#10;  ./behavior_tree/state_machine1.py:94:1: D400 First line should end with a period&#10;  ./behavior_tree/state_machine1.py:99:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:101:60: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:107:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:111:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:115:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:123:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:127:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:132:1: D200 One-line docstring should fit on one line with quotes&#10;  ./behavior_tree/state_machine1.py:132:1: D204 1 blank line required after class docstring&#10;  ./behavior_tree/state_machine1.py:132:1: D400 First line should end with a period&#10;  ./behavior_tree/state_machine1.py:138:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:139:77: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:140:60: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:145:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:151:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:156:100: E501 line too long (101 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:157:10: W291 trailing whitespace&#10;  ./behavior_tree/state_machine1.py:158:100: E501 line too long (109 &gt; 99 characters)&#10;  ./behavior_tree/state_machine1.py:170:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:175:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:180:1: E266 too many leading '#' for block comment&#10;  ./behavior_tree/state_machine1.py:183:1: D200 One-line docstring should fit on one line with quotes&#10;  ./behavior_tree/state_machine1.py:183:1: D202 No blank lines allowed after function docstring&#10;  ./behavior_tree/state_machine1.py:183:1: D400 First line should end with a period&#10;  ./behavior_tree/state_machine1.py:183:1: D401 First line should be in imperative mood; try rephrasing&#10;  ./behavior_tree/state_machine1.py:188:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:198:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:200:26: E128 continuation line under-indented for visual indent&#10;  ./behavior_tree/state_machine1.py:203:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:205:26: E128 continuation line under-indented for visual indent&#10;  ./behavior_tree/state_machine1.py:206:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:208:26: E128 continuation line under-indented for visual indent&#10;  ./behavior_tree/state_machine1.py:211:5: F841 local variable 'outcome' is assigned to but never used&#10;  ./behavior_tree/state_machine1.py:215:1: W293 blank line contains whitespace&#10;  ./behavior_tree/state_machine1.py:218:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./behavior_tree/state_machine1.py:218:16: Q000 Double quotes found but single quotes preferred&#10;  ./behavior_tree/state_machine1.py:219:11: W292 no newline at end of file&#10;  ./behavior_tree/test.py:3:1: F401 'state_machine1.RotateBase' imported but unused&#10;  ./behavior_tree/test.py:3:1: F401 'state_machine1.StopMotion' imported but unused&#10;  ./behavior_tree/test.py:3:1: I201 Missing newline between import groups. 'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion' is identified as Third Party and 'from unittest.mock import MagicMock' is identified as Stdlib.&#10;  ./behavior_tree/test.py:5:1: E302 expected 2 blank lines, found 1&#10;  ./behavior_tree/test.py:6:1: CNL100 Class definition does not have a new line.&#10;  ./behavior_tree/test.py:19:1: W293 blank line contains whitespace&#10;  ./behavior_tree/test.py:23:1: W293 blank line contains whitespace&#10;  ./behavior_tree/test.py:49:1: E305 expected 2 blank lines after class or function definition, found 1&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 82 code style errors / warnings:
+E     ./behavior_tree/state_machine1.py:1:1: E266 too many leading '#' for block comment
+E     ./behavior_tree/state_machine1.py:2:1: E266 too many leading '#' for block comment
+E     ./behavior_tree/state_machine1.py:7:1: F401 'rclpy.parameter.Parameter' imported but unused
+E     ./behavior_tree/state_machine1.py:7:1: I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'import smach'
+E     ./behavior_tree/state_machine1.py:8:1: I100 Import statements are in the wrong order. 'from rclpy.node import Node' should be before 'from rclpy.parameter import Parameter'
+E     ./behavior_tree/state_machine1.py:9:1: F401 'std_msgs.msg.String' imported but unused
+E     ./behavior_tree/state_machine1.py:10:1: I100 Import statements are in the wrong order. 'from std_msgs.msg import Float32' should be before 'from std_msgs.msg import String'
+E     ./behavior_tree/state_machine1.py:11:1: I100 Import statements are in the wrong order. 'from sensor_msgs.msg import LaserScan' should be before 'from std_msgs.msg import Float32'
+E     ./behavior_tree/state_machine1.py:12:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+E     ./behavior_tree/state_machine1.py:13:1: F401 'yaml' imported but unused
+E     ./behavior_tree/state_machine1.py:14:1: F401 'time' imported but unused
+E     ./behavior_tree/state_machine1.py:14:1: I100 Import statements are in the wrong order. 'import time' should be before 'import yaml' and in a different group.
+E     ./behavior_tree/state_machine1.py:14:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import yaml' is identified as Third Party.
+E     ./behavior_tree/state_machine1.py:18:1: E302 expected 2 blank lines, found 1
+E     ./behavior_tree/state_machine1.py:19:1: D200 One-line docstring should fit on one line with quotes
+E     ./behavior_tree/state_machine1.py:19:1: D204 1 blank line required after class docstring
+E     ./behavior_tree/state_machine1.py:19:1: D400 First line should end with a period
+E     ./behavior_tree/state_machine1.py:24:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:25:82: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:26:82: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:28:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:34:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:35:100: E501 line too long (107 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:37:100: E501 line too long (112 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:39:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:44:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:46:100: E501 line too long (104 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:53:5: E301 expected 1 blank line, found 0
+E     ./behavior_tree/state_machine1.py:75:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:78:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:81:100: E501 line too long (102 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:82:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:89:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:93:1: E303 too many blank lines (4)
+E     ./behavior_tree/state_machine1.py:94:1: D200 One-line docstring should fit on one line with quotes
+E     ./behavior_tree/state_machine1.py:94:1: D204 1 blank line required after class docstring
+E     ./behavior_tree/state_machine1.py:94:1: D400 First line should end with a period
+E     ./behavior_tree/state_machine1.py:99:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:101:60: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:107:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:111:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:115:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:123:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:127:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:132:1: D200 One-line docstring should fit on one line with quotes
+E     ./behavior_tree/state_machine1.py:132:1: D204 1 blank line required after class docstring
+E     ./behavior_tree/state_machine1.py:132:1: D400 First line should end with a period
+E     ./behavior_tree/state_machine1.py:138:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:139:77: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:140:60: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:145:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:151:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:156:100: E501 line too long (101 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:157:10: W291 trailing whitespace
+E     ./behavior_tree/state_machine1.py:158:100: E501 line too long (109 &gt; 99 characters)
+E     ./behavior_tree/state_machine1.py:170:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:175:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:180:1: E266 too many leading '#' for block comment
+E     ./behavior_tree/state_machine1.py:183:1: D200 One-line docstring should fit on one line with quotes
+E     ./behavior_tree/state_machine1.py:183:1: D202 No blank lines allowed after function docstring
+E     ./behavior_tree/state_machine1.py:183:1: D400 First line should end with a period
+E     ./behavior_tree/state_machine1.py:183:1: D401 First line should be in imperative mood; try rephrasing
+E     ./behavior_tree/state_machine1.py:188:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:198:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:200:26: E128 continuation line under-indented for visual indent
+E     ./behavior_tree/state_machine1.py:203:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:205:26: E128 continuation line under-indented for visual indent
+E     ./behavior_tree/state_machine1.py:206:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:208:26: E128 continuation line under-indented for visual indent
+E     ./behavior_tree/state_machine1.py:211:5: F841 local variable 'outcome' is assigned to but never used
+E     ./behavior_tree/state_machine1.py:215:1: W293 blank line contains whitespace
+E     ./behavior_tree/state_machine1.py:218:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./behavior_tree/state_machine1.py:218:16: Q000 Double quotes found but single quotes preferred
+E     ./behavior_tree/state_machine1.py:219:11: W292 no newline at end of file
+E     ./behavior_tree/test.py:3:1: F401 'state_machine1.RotateBase' imported but unused
+E     ./behavior_tree/test.py:3:1: F401 'state_machine1.StopMotion' imported but unused
+E     ./behavior_tree/test.py:3:1: I201 Missing newline between import groups. 'from state_machine1 import MonitorBatteryAndCollision, RotateBase, StopMotion' is identified as Third Party and 'from unittest.mock import MagicMock' is identified as Stdlib.
+E     ./behavior_tree/test.py:5:1: E302 expected 2 blank lines, found 1
+E     ./behavior_tree/test.py:6:1: CNL100 Class definition does not have a new line.
+E     ./behavior_tree/test.py:19:1: W293 blank line contains whitespace
+E     ./behavior_tree/test.py:23:1: W293 blank line contains whitespace
+E     ./behavior_tree/test.py:49:1: E305 expected 2 blank lines after class or function definition, found 1
+E   assert 1 == 0</failure></testcase><testcase classname="behavior_tree.test.test_pep257" name="test_pep257" time="0.058"><failure message="AssertionError: Found code style errors / warnings&#10;assert 1 == 0">test/test_pep257.py:23: in test_pep257
+    assert rc == 0, 'Found code style errors / warnings'
+E   AssertionError: Found code style errors / warnings
+E   assert 1 == 0</failure></testcase></testsuite></testsuites>
