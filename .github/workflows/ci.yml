@@ -12,6 +12,11 @@ jobs:
     - name: Setup ROS
       uses: ros-tooling/setup-ros@v0.7
 
+    - name: Update GPG Keyring
+      run: |
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F42ED6FBAB17C654
+        sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
+
     - name: Install dependencies
       run: sudo apt-get update && rosdep install --from-paths src --ignore-src -r -y
 
