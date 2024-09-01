@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up ROS 2
-      uses: ros-tooling/setup-ros@main  # Update the version here
+      uses: ros-tooling/setup-ros@v0.7  # Use the stable version
       with:
         required-ros-distributions: ${{ env.ROS_DISTRO }}
 
