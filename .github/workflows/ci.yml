@@ -25,6 +25,8 @@ jobs:
         rosdep update
 
     - name: Install dependencies
+      env:
+        ROS_PYTHON_VERSION: 3
       run: rosdep install --from-paths src --ignore-src -r -y
 
     - name: Install Python dependencies
