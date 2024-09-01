@@ -5,35 +5,50 @@ on: [push, pull_request]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      ROS_DISTRO: humble  # Set to the correct ROS distribution
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Setup ROS
       uses: ros-tooling/setup-ros@v0.7
+      with:
+        required-ros-distributions: humble  # Specify ROS Humble here
 
     - name: Update GPG Keyring
       run: |
-        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F42ED6FBAB17C654
-        sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
+        sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-keys F42ED6FBAB17C654
+        sudo apt-get update
 
     - name: Initialize rosdep
       run: |
-        if [ ! -f /etc/ros/rosdep/sources.list.d/20-default.list ]; then
-          sudo rosdep init
-        fi
+        sudo rosdep init || true
         rosdep update
 
     - name: Install dependencies
-      env:
-        ROS_PYTHON_VERSION: 3
-      run: rosdep install --from-paths src --ignore-src -r -y
+      run: |
+        rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+      shell: bash
 
     - name: Install Python dependencies
-      run: python3 -m pip install -r requirements.txt
+      run: |
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      shell: bash
 
     - name: Build the package
-      run: colcon build --packages-select behavior_tree
+      run: |
+        colcon build --symlink-install
+      shell: bash
 
     - name: Run custom tests
-      run: python3 src/behavior_tree/behavior_tree/test.py
+      run: |
+        colcon test --packages-select behavior_tree
+      shell: bash
+
+    - name: Post Job Cleanup
+      if: always()
+      run: |
+        colcon test-result --all
+      shell: bash
