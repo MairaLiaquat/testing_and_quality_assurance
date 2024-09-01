@@ -17,8 +17,13 @@ jobs:
         sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F42ED6FBAB17C654
         sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
 
+    - name: Initialize rosdep
+      run: |
+        sudo rosdep init
+        rosdep update
+
     - name: Install dependencies
-      run: sudo apt-get update && rosdep install --from-paths src --ignore-src -r -y
+      run: rosdep install --from-paths src --ignore-src -r -y
 
     - name: Install Python dependencies
       run: python3 -m pip install -r requirements.txt
